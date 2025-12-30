@@ -19,8 +19,8 @@ const muteToggleButton = document.getElementById("muteToggle");
 
 if (heroVideo && muteToggleButton) {
   // Ensure video starts unmuted as per user request
-  heroVideo.muted = false;
-  muteToggleButton.textContent = "🔊"; // Set initial icon to unmuted
+  heroVideo.muted = true;
+  muteToggleButton.textContent = "🔇"; // Set initial icon to muted
 
   muteToggleButton.addEventListener("click", () => {
     heroVideo.muted = !heroVideo.muted;

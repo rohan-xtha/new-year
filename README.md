@@ -26,3 +26,46 @@ Built with smooth animations, video elements, and a clean modern UI.
 
 ## 📂 Project Structure
 
+
+
+## 🚀 Live Demo
+
+👉 *Coming soon (GitHub Pages)*  
+You can deploy this project using **GitHub Pages** for a live preview.
+
+---
+
+## 🎯 Purpose of This Project
+
+This project was created to:
+- Practice front-end animation techniques
+- Build an emotionally positive New Year experience
+- Improve UI/UX skills using real-world visuals
+- Share something meaningful and motivating with others
+
+---
+
+## 📌 Future Improvements
+
+- 🔊 Background music with mute option  
+- 🧭 Scroll progress indicator  
+- 🎨 Theme toggle (dark / light)  
+- 📤 Share button for social media  
+
+---
+
+## 🤝 Contributing
+
+Feel free to fork this repository, improve it, and submit a pull request.
+
+---
+
+## 📜 License
+
+This project is open-source and available under the **MIT License**.
+
+---
+
+### 💬 Final Note
+
+If this project made you feel hopeful about the new year, consider sharing it with someone who survived the last one 🌱

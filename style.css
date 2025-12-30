@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top, #1b1f3b, #050510);
+  color: white;
+  overflow-x: hidden;
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(12px);
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 10;
+}
+
+.navbar-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+}
+
+/* HERO */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 140px 80px 80px;
+}
+
+/* LEFT TEXT */
+.hero-text h1 {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.hero-text span {
+  color: #ff4d6d;
+}
+
+.hero-text p {
+  margin: 20px 0 30px;
+  max-width: 420px;
+  color: #bbb;
+}
+
+.cta {
+  background: linear-gradient(90deg, #ff4d6d, #ff8fa3);
+  border: none;
+  padding: 15px 36px;
+  border-radius: 40px;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 0 30px rgba(255, 77, 109, 0.6);
+}
+
+/* VIDEO SIDE */
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* PHONE STYLE FRAME */
+.video-frame {
+  position: relative;
+  width: 320px;
+  height: 560px;
+  border-radius: 32px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 0 40px rgba(255, 77, 109, 0.35), 0 40px 100px rgba(0, 0, 0, 0.7);
+  animation: float 6s ease-in-out infinite;
+}
+
+/* VIDEO */
+.video-frame video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* DARK GRADIENT OVERLAY */
+.video-frame::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1));
+}
+
+/* TEXT OVERLAY */
+.video-overlay {
+  position: absolute;
+  bottom: 25px;
+  left: 20px;
+  z-index: 1; /* Ensure overlay is below the mute button */
+}
+
+.video-overlay h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.video-overlay p {
+  font-size: 14px;
+  color: #ddd;
+}
+
+/* MUTE TOGGLE BUTTON */
+.mute-toggle {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 3;
+  color: white;
+}
+
+/* FLOAT ANIMATION */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 100px 20px 40px;
+  }
+
+  .hero-text h1 {
+    font-size: 48px;
+  }
+
+  .hero-text p {
+    max-width: 100%;
+  }
+
+  .video-frame {
+    width: 280px;
+    height: 480px;
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .hero-text h1 {
+    font-size: 40px;
+  }
+
+  .cta {
+    padding: 12px 30px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 15px 15px;
+  }
+
+  .navbar-title {
+    font-size: 20px;
+  }
+
+  .hero-text h1 {
+    font-size: 32px;
+  }
+
+  .hero-text p {
+    font-size: 14px;
+  }
+
+  .video-frame {
+    width: 250px;
+    height: 430px;
+  }
+
+  .mute-toggle {
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+  }
+}

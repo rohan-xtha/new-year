@@ -30,8 +30,7 @@ Built with smooth animations, video elements, and a clean modern UI.
 
 ## 🚀 Live Demo
 
-👉 *Coming soon (GitHub Pages)*  
-You can deploy this project using **GitHub Pages** for a live preview.
+https://rohan-xtha.github.io/new-year/
 
 ---
 
